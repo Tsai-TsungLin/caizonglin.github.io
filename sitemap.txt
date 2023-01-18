@@ -1,8 +1,8 @@
-http://example.com/2023/01/17/first-blog/
 http://example.com/google45cc8dd8171c2077.html
-http://example.com/404.html
-http://example.com/2023/01/17/hello-world/
 http://example.com/izooto.html
-http://example.com/tags/index.html
 http://example.com/categories/index.html
+http://example.com/tags/index.html
+http://example.com/2023/01/17/first-blog/
+http://example.com/2023/01/17/hello-world/
+http://example.com/404.html
 http://example.com/
