@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Lex Blog</title>
+  <icon>https://caizonglin.github.io/icon.png</icon>
+  
+  <link href="https://caizonglin.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://caizonglin.github.io/"/>
+  <updated>2023-01-17T02:48:38.000Z</updated>
+  <id>https://caizonglin.github.io/</id>
+  
+  <author>
+    <name>Lex Cai</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Lex&#39;s Blog</title>
+    <link href="https://caizonglin.github.io/2023/01/17/first-blog/"/>
+    <id>https://caizonglin.github.io/2023/01/17/first-blog/</id>
+    <published>2023-01-17T02:48:38.000Z</published>
+    <updated>2023-01-17T02:48:38.000Z</updated>
+    
+    
+    <summary type="html">&lt;center&gt;Test&lt;/center&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://caizonglin.github.io/2023/01/17/hello-world/"/>
+    <id>https://caizonglin.github.io/2023/01/17/hello-world/</id>
+    <published>2023-01-17T02:02:37.470Z</published>
+    <updated>2023-01-17T02:02:37.470Z</updated>
+    
+    
+    <summary type="html">&lt;center&gt;Quick Start&lt;/center&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+</feed>
