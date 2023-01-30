@@ -67,11 +67,18 @@
 
   <url>
     <loc>https://caizonglin.github.io/</loc>
-    <lastmod>2023-01-18</lastmod>
+    <lastmod>2023-01-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://caizonglin.github.io/tags/Markdown/</loc>
+    <lastmod>2023-01-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 
   
