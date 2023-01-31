@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://caizonglin.github.io/2023/01/31/Golang%E7%9A%84Interface-2/</loc>
+    
+    <lastmod>2023-01-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://caizonglin.github.io/2023/01/31/Golang%E7%9A%84Interface-1/</loc>
+    
+    <lastmod>2023-01-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://caizonglin.github.io/google45cc8dd8171c2077.html</loc>
     
     <lastmod>2023-01-18</lastmod>
@@ -38,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://caizonglin.github.io/2023/01/17/first-blog/</loc>
+    <loc>https://caizonglin.github.io/2023/01/17/Markdown/</loc>
     
     <lastmod>2023-01-17</lastmod>
     
@@ -67,19 +85,26 @@
 
   <url>
     <loc>https://caizonglin.github.io/</loc>
-    <lastmod>2023-01-30</lastmod>
+    <lastmod>2023-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
+
+  
   <url>
-    <loc>https://caizonglin.github.io/tags/Markdown/</loc>
-    <lastmod>2023-01-30</lastmod>
+    <loc>https://caizonglin.github.io/categories/Golang/</loc>
+    <lastmod>2023-01-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
-
+  <url>
+    <loc>https://caizonglin.github.io/categories/Markdown/</loc>
+    <lastmod>2023-01-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>

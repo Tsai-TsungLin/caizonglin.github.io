@@ -6,7 +6,7 @@
   <link href="https://caizonglin.github.io/atom.xml" rel="self"/>
   
   <link href="https://caizonglin.github.io/"/>
-  <updated>2023-01-17T02:48:38.000Z</updated>
+  <updated>2023-01-31T05:50:26.000Z</updated>
   <id>https://caizonglin.github.io/</id>
   
   <author>
@@ -17,9 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Golang的Interface(2)</title>
+    <link href="https://caizonglin.github.io/2023/01/31/Golang%E7%9A%84Interface-2/"/>
+    <id>https://caizonglin.github.io/2023/01/31/Golang%E7%9A%84Interface-2/</id>
+    <published>2023-01-31T05:50:26.000Z</published>
+    <updated>2023-01-31T05:50:26.000Z</updated>
+    
+    
+    <summary type="html">&lt;center&gt;Interface 進階用法&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Golang" scheme="https://caizonglin.github.io/categories/Golang/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Golang的Interface(1)</title>
+    <link href="https://caizonglin.github.io/2023/01/31/Golang%E7%9A%84Interface-1/"/>
+    <id>https://caizonglin.github.io/2023/01/31/Golang%E7%9A%84Interface-1/</id>
+    <published>2023-01-31T02:40:54.000Z</published>
+    <updated>2023-01-31T02:40:54.000Z</updated>
+    
+    
+    <summary type="html">&lt;center&gt;Interface 兩種類型介紹&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Golang" scheme="https://caizonglin.github.io/categories/Golang/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>MarkDown</title>
-    <link href="https://caizonglin.github.io/2023/01/17/first-blog/"/>
-    <id>https://caizonglin.github.io/2023/01/17/first-blog/</id>
+    <link href="https://caizonglin.github.io/2023/01/17/Markdown/"/>
+    <id>https://caizonglin.github.io/2023/01/17/Markdown/</id>
     <published>2023-01-17T02:48:38.000Z</published>
     <updated>2023-01-17T02:48:38.000Z</updated>
     
@@ -28,8 +62,8 @@
     
     
     
+    <category term="Markdown" scheme="https://caizonglin.github.io/categories/Markdown/"/>
     
-    <category term="Markdown" scheme="https://caizonglin.github.io/tags/Markdown/"/>
     
   </entry>
   
