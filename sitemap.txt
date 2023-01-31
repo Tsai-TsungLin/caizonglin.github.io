@@ -8,5 +8,6 @@ https://caizonglin.github.io/2023/01/17/Markdown/
 https://caizonglin.github.io/2023/01/17/hello-world/
 https://caizonglin.github.io/404.html
 https://caizonglin.github.io/
+https://caizonglin.github.io/tags/Interface/
 https://caizonglin.github.io/categories/Golang/
 https://caizonglin.github.io/categories/Markdown/
