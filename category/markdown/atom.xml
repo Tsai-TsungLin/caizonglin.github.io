@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://caizonglin.github.io</id>
+    <title>Lex Blog • Posts by &#34;markdown&#34; category</title>
+    <link href="https://caizonglin.github.io" />
+    <updated>2023-01-17T02:48:38.000Z</updated>
+    <category term="channel" />
+    <category term="Interface" />
+    <category term="Markdown" />
+    <entry>
+        <id>https://caizonglin.github.io/2023/01/17/Markdown/</id>
+        <title>MarkDown</title>
+        <link rel="alternate" href="https://caizonglin.github.io/2023/01/17/Markdown/"/>
+        <content type="html">&lt;p&gt;&lt;span id=&#34;0&#34;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;MarkDown-入門&#34;&gt;&lt;a href=&#34;#MarkDown-入門&#34; class=&#34;headerlink&#34; title=&#34;MarkDown 入門&#34;&gt;&lt;/a&gt;&lt;center&gt;MarkDown 入門&lt;/center&gt;&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;基本用法&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#1&#34;&gt;副標&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#2&#34;&gt;字體大小&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#3&#34;&gt;字體效果&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#4&#34;&gt;引文&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#5&#34;&gt;標號&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#6&#34;&gt;連結&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#7&#34;&gt;定義清單&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#8&#34;&gt;分隔線&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#9&#34;&gt;程式碼&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#10&#34;&gt;標籤連結&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#11&#34;&gt;圖片&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#12&#34;&gt;圖片連結&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#13&#34;&gt;表格&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#14&#34;&gt;短區塊&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#15&#34;&gt;CheckBox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#16&#34;&gt;跳脫字元&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;副標&#34;&gt;&lt;a href=&#34;#副標&#34; class=&#34;headerlink&#34; title=&#34;副標&#34;&gt;&lt;/a&gt;&lt;span id=&#34;1&#34;&gt;副標&lt;/span&gt;&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;副標     &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;字體大小&#34;&gt;&lt;a href=&#34;#字體大小&#34; class=&#34;headerlink&#34; title=&#34;字體大小&#34;&gt;&lt;/a&gt;&lt;span id=&#34;2&#34;&gt;字體大小&lt;/span&gt;&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# H1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;## H2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;### H3&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#### H4&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;##### H5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;字體效果&#34;&gt;&lt;a href=&#34;#字體效果&#34; class=&#34;headerlink&#34; title=&#34;字體效果&#34;&gt;&lt;/a&gt;&lt;span id=&#34;3&#34;&gt;字體效果&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;&lt;em&gt;斜體字&lt;/em&gt;&lt;br&gt;&lt;strong&gt;粗體字&lt;/strong&gt;&lt;br&gt;&lt;em&gt;&lt;strong&gt;斜體兼粗體&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;&lt;del&gt;刪除線&lt;/del&gt;&lt;br&gt;&lt;em&gt;斜體2&lt;/em&gt;&lt;br&gt;&lt;strong&gt;斜粗2&lt;/strong&gt;&lt;br&gt;正常&lt;sup&gt;上標&lt;/sup&gt;&lt;br&gt;正常&lt;sub&gt;下標&lt;/sub&gt;&lt;br&gt;&lt;u&gt;底線&lt;/u&gt;&lt;br&gt;&lt;font color=#008000&gt;顏色&lt;/font&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;顏色部分可以到 &lt;a href=&#34;https://www.ifreesite.com/color/web-color-code.htm&#34;&gt;常用顏色表&lt;/a&gt; 查詢&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;*斜體字*&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;**粗體字**&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;***斜體兼粗體***&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;~~刪除線~~&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*斜體2*&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;**斜粗2**&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;正常&amp;lt;sup&amp;gt;上標&amp;lt;/sup&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;正常&amp;lt;sub&amp;gt;下標&amp;lt;/sub&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;u&amp;gt;底線&amp;lt;/u&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;font color=&lt;span class=&#34;comment&#34;&gt;#008000&amp;gt;顏色&amp;lt;/font&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;引文&#34;&gt;&lt;a href=&#34;#引文&#34; class=&#34;headerlink&#34; title=&#34;引文&#34;&gt;&lt;/a&gt;&lt;span id=&#34;4&#34;&gt;引文&lt;/span&gt;&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;縮排語法&lt;br&gt;第一層&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第二層&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第三層&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;gt;第一層&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;gt;&amp;gt;第二層&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;gt;&amp;gt;&amp;gt;第三層&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;標號&#34;&gt;&lt;a href=&#34;#標號&#34; class=&#34;headerlink&#34; title=&#34;標號&#34;&gt;&lt;/a&gt;&lt;span id=&#34;5&#34;&gt;標號&lt;/span&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;數字標號&lt;/li&gt;
+&lt;li&gt;數字標號&lt;/li&gt;
+&lt;li&gt;數字標號&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;其他標號&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;其他標號&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;其他標號&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1. 數字標號&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2. 數字標號&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3. 數字標號&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- 其他標號&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;+ 其他標號&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;* 其他標號&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;連結&#34;&gt;&lt;a href=&#34;#連結&#34; class=&#34;headerlink&#34; title=&#34;連結&#34;&gt;&lt;/a&gt;&lt;span id=&#34;6&#34;&gt;連結&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://google.com/&#34;&gt;連結名稱&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;[連結名稱](網址)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;定義清單&#34;&gt;&lt;a href=&#34;#定義清單&#34; class=&#34;headerlink&#34; title=&#34;定義清單&#34;&gt;&lt;/a&gt;&lt;span id=&#34;7&#34;&gt;定義清單&lt;/span&gt;&lt;/h2&gt;&lt;dl&gt;&lt;dt&gt;名詞1&lt;/dt&gt;&lt;dd&gt;解釋1&lt;/dd&gt;&lt;/dl&gt;&lt;dl&gt;&lt;dt&gt;名字2&lt;/dt&gt;&lt;dd&gt;解釋2&lt;/dd&gt;&lt;/dl&gt;&lt;p&gt;名詞 3&lt;br&gt;~ 定義 3&lt;br&gt;~ 定義 3&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;名詞1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;: 解釋1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;名字2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;: 解釋2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;名詞 3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;~ 定義 3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;~ 定義 3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;分隔線&#34;&gt;&lt;a href=&#34;#分隔線&#34; class=&#34;headerlink&#34; title=&#34;分隔線&#34;&gt;&lt;/a&gt;&lt;span id=&#34;8&#34;&gt;分隔線&lt;/span&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;空行&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;***&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- - -&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;* * *&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;程式碼&#34;&gt;&lt;a href=&#34;#程式碼&#34; class=&#34;headerlink&#34; title=&#34;程式碼&#34;&gt;&lt;/a&gt;&lt;span id=&#34;9&#34;&gt;程式碼&lt;/span&gt;&lt;/h2&gt;&lt;figure class=&#34;highlight go&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;package&lt;/span&gt; main&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;context&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;encoding/json&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;example/test/used&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;fmt&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;io/ioutil&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;net/http&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;os&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; gpt3 &lt;span class=&#34;string&#34;&gt;&amp;quot;github.com/sashabaranov/go-gpt3&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; apiKey     = &lt;span class=&#34;string&#34;&gt;&amp;quot;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&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; weatherKey = &lt;span class=&#34;string&#34;&gt;&amp;quot;CWB-6A11B731-F671-4A4C-B6D6-B401AE2DF2EB&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt;&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;comment&#34;&gt;//do something&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;`&amp;#96;&amp;#96;程式類型&lt;br&gt;程式內容&lt;br&gt;`&amp;#96;&amp;#96;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;連結-1&#34;&gt;&lt;a href=&#34;#連結-1&#34; class=&#34;headerlink&#34; title=&#34;連結&#34;&gt;&lt;/a&gt;&lt;span id=&#34;10&#34;&gt;連結&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;http://google.com/&#34; title=&#34;游標顯示&#34;&gt;Google&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;http://search.yahoo.com/&#34; title=&#34;游標顯示&#34;&gt;Yahoo&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;http://search.msn.com/&#34; title=&#34;游標顯示&#34;&gt;MSN&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;[Google][1]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[Yahoo][2]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[MSN][3]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  [1]: http://google.com/      &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  [2]: http://search.yahoo.com/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  [3]: http://search.msn.com/  &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;圖片&#34;&gt;&lt;a href=&#34;#圖片&#34; class=&#34;headerlink&#34; title=&#34;圖片&#34;&gt;&lt;/a&gt;&lt;span id=&#34;11&#34;&gt;圖片&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;&lt;img data-src=&#34;https://i.imgur.com/5xkYoph.png&#34; alt=&#34;測試圖片&#34;&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;![圖片名稱](連結)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;圖片連結&#34;&gt;&lt;a href=&#34;#圖片連結&#34; class=&#34;headerlink&#34; title=&#34;圖片連結&#34;&gt;&lt;/a&gt;&lt;span id=&#34;12&#34;&gt;圖片連結&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://www.google.com/search?q=Golang&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwjx7saE8e78AhXhUfUHHY-4AaQQ_AUoAXoECDIQAw&amp;biw=1680&amp;bih=943&amp;dpr=2#imgrc=B8BCI6NN0ok1JM&#34;&gt;&lt;img data-src=&#34;https://i.imgur.com/5xkYoph.png&#34; alt=&#34;測試圖片&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;[![圖片](圖片網址)](連結網址)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;表格&#34;&gt;&lt;a href=&#34;#表格&#34; class=&#34;headerlink&#34; title=&#34;表格&#34;&gt;&lt;/a&gt;&lt;span id=&#34;13&#34;&gt;表格&lt;/span&gt;&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;欄位1&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;欄位2&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;欄位3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;置左&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;置右&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;置中&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;$100&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;$100&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;$100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;$10&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;$10&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;$10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;$1&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;$1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;$1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;| 欄位1 | 欄位2 | 欄位3 |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;| :-- | --: |:--:| &amp;lt;-只需打一次&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;| 置左  | 置右 | 置中 |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;| &lt;span class=&#34;variable&#34;&gt;$100&lt;/span&gt; | &lt;span class=&#34;variable&#34;&gt;$100&lt;/span&gt; | &lt;span class=&#34;variable&#34;&gt;$100&lt;/span&gt; |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;| &lt;span class=&#34;variable&#34;&gt;$10&lt;/span&gt; | &lt;span class=&#34;variable&#34;&gt;$10&lt;/span&gt; | &lt;span class=&#34;variable&#34;&gt;$10&lt;/span&gt; |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;| &lt;span class=&#34;variable&#34;&gt;$1&lt;/span&gt; | &lt;span class=&#34;variable&#34;&gt;$1&lt;/span&gt; | &lt;span class=&#34;variable&#34;&gt;$1&lt;/span&gt; |&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;短區塊&#34;&gt;&lt;a href=&#34;#短區塊&#34; class=&#34;headerlink&#34; title=&#34;短區塊&#34;&gt;&lt;/a&gt;&lt;span id=&#34;14&#34;&gt;短區塊&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;&lt;code&gt;測試內容&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;`測試內容`&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;CheckBox&#34;&gt;&lt;a href=&#34;#CheckBox&#34; class=&#34;headerlink&#34; title=&#34;CheckBox&#34;&gt;&lt;/a&gt;&lt;span id=&#34;15&#34;&gt;CheckBox&lt;/span&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 未完成&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 已完成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;- [ ] 未完成&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- [x] 已完成&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;跳脫字元&#34;&gt;&lt;a href=&#34;#跳脫字元&#34; class=&#34;headerlink&#34; title=&#34;跳脫字元&#34;&gt;&lt;/a&gt;&lt;span id=&#34;16&#34;&gt;跳脫字元&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;###&lt;br&gt;`&amp;#96;&amp;#96;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;\+任意符號 (反斜線)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;#0&#34;&gt;點此回到頁首&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="Markdown" />
+        <updated>2023-01-17T02:48:38.000Z</updated>
+    </entry>
+</feed>
