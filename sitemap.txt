@@ -1,3 +1,4 @@
+https://caizonglin.github.io/2023/02/02/Golang%E7%9A%84Channel-2/
 https://caizonglin.github.io/2023/02/01/Golang%E7%9A%84Channel-1/
 https://caizonglin.github.io/2023/01/31/Golang%E7%9A%84Interface-2/
 https://caizonglin.github.io/2023/01/31/Golang%E7%9A%84Interface-1/

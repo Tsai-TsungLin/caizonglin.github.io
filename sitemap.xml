@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://caizonglin.github.io/2023/02/02/Golang%E7%9A%84Channel-2/</loc>
+    
+    <lastmod>2023-02-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://caizonglin.github.io/2023/02/01/Golang%E7%9A%84Channel-1/</loc>
     
     <lastmod>2023-02-01</lastmod>
