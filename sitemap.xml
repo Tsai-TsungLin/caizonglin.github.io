@@ -121,7 +121,7 @@
 
   <url>
     <loc>https://caizonglin.github.io/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -129,21 +129,21 @@
   
   <url>
     <loc>https://caizonglin.github.io/tags/channel/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://caizonglin.github.io/tags/Interface/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://caizonglin.github.io/tags/Markdown/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -152,14 +152,14 @@
   
   <url>
     <loc>https://caizonglin.github.io/categories/Golang/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://caizonglin.github.io/categories/Markdown/</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2023-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

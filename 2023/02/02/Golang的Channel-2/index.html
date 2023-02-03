@@ -45,21 +45,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://cdn.izooto.com/scripts/5099ca49869be0e652e68f0f2967134415c939fa.js"></script>
   <meta name="description" content="Channel 介紹">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Golang的Channel(1)">
-<meta property="og:url" content="https://caizonglin.github.io/2023/02/01/Golang%E7%9A%84Channel-1/index.html">
+<meta property="og:title" content="Golang的Channel(2)">
+<meta property="og:url" content="https://caizonglin.github.io/2023/02/02/Golang%E7%9A%84Channel-2/index.html">
 <meta property="og:site_name" content="Lex Blog">
 <meta property="og:description" content="Channel 介紹">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://i.imgur.com/IPZDBpj.png">
-<meta property="og:image" content="https://i.imgur.com/mdRUDti.png">
-<meta property="article:published_time" content="2023-02-01T07:43:01.000Z">
-<meta property="article:modified_time" content="2023-02-01T07:43:01.000Z">
+<meta property="article:published_time" content="2023-02-02T03:45:00.000Z">
+<meta property="article:modified_time" content="2023-02-02T03:45:00.000Z">
 <meta property="article:author" content="Lex Cai">
 <meta property="article:tag" content="channel">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i.imgur.com/IPZDBpj.png">
 
-<link rel="canonical" href="https://caizonglin.github.io/2023/02/01/Golang%E7%9A%84Channel-1/">
+<link rel="canonical" href="https://caizonglin.github.io/2023/02/02/Golang%E7%9A%84Channel-2/">
 
 
 <script id="page-configurations">
@@ -72,7 +71,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   };
 </script>
 
-  <title>Golang的Channel(1) | Lex Blog</title>
+  <title>Golang的Channel(2) | Lex Blog</title><meta name="robots" content="noindex">
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJX5WW3K23"></script>
     <script data-pjax>
@@ -227,7 +226,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://caizonglin.github.io/2023/02/01/Golang%E7%9A%84Channel-1/">
+    <link itemprop="mainEntityOfPage" href="https://caizonglin.github.io/2023/02/02/Golang%E7%9A%84Channel-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/stickers.jpg">
@@ -240,7 +239,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Golang的Channel(1)
+          Golang的Channel(2)
         </h1>
 
         <div class="post-meta">
@@ -250,7 +249,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </span>
               <span class="post-meta-item-text">發表於</span>
 
-              <time title="創建時間：2023-02-01 15:43:01" itemprop="dateCreated datePublished" datetime="2023-02-01T15:43:01+08:00">2023-02-01</time>
+              <time title="創建時間：2023-02-02 11:45:00" itemprop="dateCreated datePublished" datetime="2023-02-02T11:45:00+08:00">2023-02-02</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -287,61 +286,51 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       
         <p><span id="0"> <img data-src="https://i.imgur.com/IPZDBpj.png" alt=" "> </span></p>
-<h2 id="Channel-是什麼？"><a href="#Channel-是什麼？" class="headerlink" title="Channel 是什麼？"></a>Channel 是什麼？</h2><p><img data-src="https://i.imgur.com/mdRUDti.png" alt="Channel 示意圖"></p>
-<p>channel能夠在多個goroutine之間作數據交換，像是在公共場所很多人的情況下, 大家在遵守著排隊的習慣, 目的是避免擁擠、插隊導致的低效資源使用與交換過程。</p>
-<ul>
-<li>chan的空值是nil</li>
-<li>聲明完通道後, 要透過make來產生實例</li>
-<li>發送資料 &lt;- , 通道變數 &lt;- 值</li>
-</ul>
-<h2 id="宣告一個Channel"><a href="#宣告一個Channel" class="headerlink" title="宣告一個Channel"></a>宣告一個Channel</h2><ol>
-<li>var 通道名稱 chan 通道類型</li>
-<li>chan的空值是nil</li>
-<li>聲明完通道後, 要透過<strong>make</strong>來產生實例</li>
-<li>通道實例 :&#x3D; make(chan 通類類型, [bufferSize int])</li>
+<p>上一篇 <a href="/2023/02/01/Golang%E7%9A%84Channel-1/" title="Golang的Channel(1)">文章</a> 簡單介紹了channel 是什麼，以及如何使用以及一些該注意的地方，現在來介紹channel更深入的應用。</p>
+<h2 id="關閉Channel"><a href="#關閉Channel" class="headerlink" title="關閉Channel"></a>關閉Channel</h2><h3 id="Why？"><a href="#Why？" class="headerlink" title="Why？"></a>Why？</h3><p>為什麼要關閉channel呢？假設有一個情況是 <em>channel 的發送次數大於&#x2F;小於接收次數</em>，例如以下程式碼:</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">    <span class="string">&quot;fmt&quot;</span></span><br><span class="line">    <span class="string">&quot;io/ioutil&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">   fmt.Println(<span class="string">&quot;NumGoroutine:&quot;</span>, runtime.NumGoroutine()) <span class="comment">// 2</span></span><br><span class="line">   intChan := <span class="built_in">make</span>(<span class="keyword">chan</span> <span class="type">int</span>)</span><br><span class="line"></span><br><span class="line">   <span class="comment">// 發送</span></span><br><span class="line">   <span class="keyword">go</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">      <span class="keyword">for</span> i := <span class="number">0</span>; i &lt; <span class="number">2</span>; i++ &#123;</span><br><span class="line">         intChan &lt;- i</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;()</span><br><span class="line"></span><br><span class="line">   <span class="comment">// 接收</span></span><br><span class="line">   <span class="keyword">go</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">      <span class="keyword">for</span> i := <span class="number">0</span>; i &lt; <span class="number">3</span>; i++ &#123;</span><br><span class="line">         fmt.Println(&lt;-intChan) <span class="comment">//0 , 1</span></span><br><span class="line">      &#125;</span><br><span class="line">   &#125;()</span><br><span class="line"></span><br><span class="line">   time.Sleep(time.Second*<span class="number">3</span>)</span><br><span class="line">   fmt.Println(<span class="string">&quot;NumGoroutine:&quot;</span>, runtime.NumGoroutine()) <span class="comment">// 3</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上述代碼可以看出，channel 的<em>發送次數</em>小於<em>接收次數</em>時，接收者go routine 由於等待發送者發送一直阻塞。因此接收者go routine 一直未退出，intChan 也由於一直被接收者使用無法被垃圾回收。未退出的go routine 和未被回收的channel 都造成了內存洩漏的問題。</p>
+<h3 id="How"><a href="#How" class="headerlink" title="How?"></a>How?</h3><p>直接上程式碼：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">&quot;fmt&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    intChan := <span class="built_in">make</span>(<span class="keyword">chan</span> <span class="type">int</span>, <span class="number">3</span>)</span><br><span class="line">    intChan &lt;- <span class="number">1</span></span><br><span class="line">    intChan &lt;- <span class="number">2</span></span><br><span class="line">    <span class="built_in">close</span>(intChan)</span><br><span class="line">    intChan &lt;- <span class="number">3</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面我宣告一個channel，透過 <em>close</em>指令可以將它關閉。</p>
+<ol>
+<li><p>關閉後就不能在向channel內塞資料了</p>
+</li>
+<li><p>若向關閉的channel 塞資料，就會出現panic的錯誤</p>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">panic: send on closed channel</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>可以從被關閉的channel中取出資料</p>
+</li>
 </ol>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">&quot;fmt&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> chanInt <span class="keyword">chan</span> <span class="type">int</span></span><br><span class="line">    fmt.Println(chanInt) <span class="comment">//nil</span></span><br><span class="line">    chanInt = <span class="built_in">make</span>(<span class="keyword">chan</span> <span class="type">int</span>, <span class="number">1</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="用for-從channel內取資料"><a href="#用for-從channel內取資料" class="headerlink" title="用for 從channel內取資料"></a>用for 從channel內取資料</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">    <span class="string">&quot;fmt&quot;</span></span><br><span class="line">    <span class="string">&quot;math/rand&quot;</span></span><br><span class="line">    <span class="string">&quot;time&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">generateNumbers</span><span class="params">(intChan <span class="keyword">chan</span> <span class="type">int</span>)</span></span> &#123;</span><br><span class="line">    count := <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> count != <span class="number">6</span> &#123;</span><br><span class="line">            num := rand.Intn(<span class="number">10</span>) + <span class="number">1</span></span><br><span class="line">            intChan &lt;- num</span><br><span class="line">            fmt.Println(<span class="string">&quot;put num:&quot;</span>, num)</span><br><span class="line">            count++</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="built_in">close</span>(intChan)</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    intChan := <span class="built_in">make</span>(<span class="keyword">chan</span> <span class="type">int</span>, <span class="number">1</span>)</span><br><span class="line">    <span class="keyword">go</span> generateNumbers(intChan)</span><br><span class="line">    <span class="keyword">for</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> num, ok := &lt;- intChan; ok &#123;</span><br><span class="line">            fmt.Printf(<span class="string">&quot;isSuccess:%v value: %d\n&quot;</span>, ok, num)</span><br><span class="line">            time.Sleep(time.Second)</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p>程式碼說明:</p>
 <ul>
-<li>宣告的時候需要加上 chan keyword 再加上 管道裡面要放怎樣型態的 element，所以上面的例子來看：var chanInt chan int 代表了宣告了一個叫做 chanInt 的變數，這個變數是 chan 型態，裡面可以放 int 型態的 element</li>
-<li>如果只有單純宣告就輸出的話，會輸出成 nil</li>
+<li><p>宣告一個channel，容量為1</p>
+</li>
+<li><p>開啟goroutine 產生數字丟進channel</p>
+</li>
+<li><p>用for 迴圈去取值，ok是前一章說過的判斷方式</p>
+</li>
 </ul>
-<h2 id="向通道塞入元素"><a href="#向通道塞入元素" class="headerlink" title="向通道塞入元素"></a>向通道塞入元素</h2><h3 id="錯誤用法"><a href="#錯誤用法" class="headerlink" title="錯誤用法"></a>錯誤用法</h3><p>如果宣告完 channel 就直接往裡面放元素 <code>(沒有make)</code> 會導致以下錯誤：</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">&quot;fmt&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> chanInt <span class="keyword">chan</span> <span class="type">int</span></span><br><span class="line">    fmt.Println(chanInt)</span><br><span class="line">    chanInt &lt;- <span class="number">10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fetal <span class="keyword">error</span>: all goroutines are asleep - deadlock!</span><br></pre></td></tr></table></figure>
-
-<h3 id="正確用法"><a href="#正確用法" class="headerlink" title="正確用法"></a>正確用法</h3><p>應該是要宣告的時候同時也要進行初始化(make)的動作：</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">&quot;fmt&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> chanInt <span class="keyword">chan</span> <span class="type">int</span></span><br><span class="line">    chanInt = <span class="built_in">make</span>(<span class="keyword">chan</span> <span class="type">int</span>, <span class="number">1</span>)</span><br><span class="line">    chanInt &lt;- <span class="number">10</span></span><br><span class="line">    fmt.Println(&lt;- chanInt)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>透過 make 給予管道內的容量為 1，代表可以放一個元素</li>
-<li>透過 &lt;- 來放進元素，透過 &lt;- 放在 channel 變數就代表取出管道內的元素，因此這邊就會輸出為 10</li>
-</ul>
-<p>我們可以透過 *len()<em>、</em>cap()*來確認是否真的有從通道中取到元素。</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">&quot;fmt&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> chanInt <span class="keyword">chan</span> <span class="type">int</span></span><br><span class="line">    chanInt = <span class="built_in">make</span>(<span class="keyword">chan</span> <span class="type">int</span>, <span class="number">1</span>)</span><br><span class="line">    fmt.Println(<span class="built_in">len</span>(chanInt)) <span class="comment">//0</span></span><br><span class="line">    chanInt &lt;- <span class="number">10</span></span><br><span class="line">    fmt.Println(<span class="built_in">len</span>(chanInt)) <span class="comment">//1</span></span><br><span class="line">    fmt.Println(&lt;- chanInt) <span class="comment">//10 </span></span><br><span class="line">    fmt.Println(<span class="built_in">len</span>(chanInt)) <span class="comment">//0</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>這邊用len()取得的是通道內<strong>元素的數量</strong>，所以第一個會是0。<br>當做了這個動作 <code>chanInt &lt;- 10</code>，意思是往這個通道塞入一個元素，所以數量會變成1，而在把它取出後，通道內元素就會變回0。</p>
-</blockquote>
-<h2 id="特別注意"><a href="#特別注意" class="headerlink" title="特別注意"></a>特別注意</h2><p>channel內的數量一旦滿了之後，再往裡面放元素會造成 block 的動作，除非有取出的動作不然就會被<em>block</em>住，如下:</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> chanInt = <span class="built_in">make</span>(<span class="keyword">chan</span> <span class="type">int</span>, <span class="number">3</span>)</span><br><span class="line">    chanInt &lt;- <span class="number">1</span></span><br><span class="line">    chanInt &lt;- <span class="number">2</span></span><br><span class="line">    chanInt &lt;- <span class="number">3</span></span><br><span class="line">    &lt;- chanInt</span><br><span class="line">    chanInt &lt;- <span class="number">4</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>這樣就可以往裡面放 4，然後取出來的元素可以給一個變數或是也不給，不給的話就像上面那樣單純取出來就可以了。</p>
-</blockquote>
-<p>這邊可以注意的是，取出來的順序是先進先出，所以這邊取出來是取出 1。可以輸出來做驗證：</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> chanInt = <span class="built_in">make</span>(<span class="keyword">chan</span> <span class="type">int</span>, <span class="number">3</span>)</span><br><span class="line">    chanInt &lt;- <span class="number">1</span></span><br><span class="line">    chanInt &lt;- <span class="number">2</span></span><br><span class="line">    chanInt &lt;- <span class="number">3</span></span><br><span class="line">    b := &lt;- chanInt</span><br><span class="line">    chanInt &lt;- <span class="number">4</span></span><br><span class="line">    fmt.Println(b)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h2><p>今天先介紹到這邊，再來會介紹一些channel的其他功能以及應用。謝謝觀看 :)</p>
+<p>這邊可以看到主程式這邊從 channel 取出資料的時候可以有兩個回傳值，第二個值是 bool 型態。代表 channel 裡面取不取的到資料。這個取不取得到資料看的是 channel 有沒有被關閉，只有當 channel 被關閉的時候這邊的 bool 值才會回傳 <em>false</em>，所以如果單純取資料的話如果取不到的話是會一直被 block 住的。</p>
 <hr>
 <p><a href="#0">點此回到頁首</a></p>
-
+<!-- flag of hidden posts -->
     </div>
 
     
     
     
       
+  <div class="popular-posts-header">推薦文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2023/02/01/Golang的Channel-1/" rel="bookmark">Golang的Channel(1)</a></div>
+    </li>
+  </ul>
 
         <div class="reward-container">
   <div>如果你覺得這篇文章對你有幫助，可以透過下方的連結給我點支持，謝謝!</div>
@@ -368,7 +357,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </li>
     <li class="post-copyright-link">
       <strong>文章連結：</strong>
-      <a href="https://caizonglin.github.io/2023/02/01/Golang%E7%9A%84Channel-1/" title="Golang的Channel(1)">https://caizonglin.github.io/2023/02/01/Golang的Channel-1/</a>
+      <a href="https://caizonglin.github.io/2023/02/02/Golang%E7%9A%84Channel-2/" title="Golang的Channel(2)">https://caizonglin.github.io/2023/02/02/Golang的Channel-2/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議。轉載請註明出處！
@@ -387,13 +376,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
         
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2023/01/31/Golang%E7%9A%84Interface-2/" rel="prev" title="Golang的Interface(2)">
-      <i class="fa fa-chevron-left"></i> Golang的Interface(2)
-    </a></div>
-      <div class="post-nav-item"></div>
-    </div>
       </footer>
     
   </article>
@@ -453,7 +435,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Channel-%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">Channel 是什麼？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%A3%E5%91%8A%E4%B8%80%E5%80%8BChannel"><span class="nav-number">2.</span> <span class="nav-text">宣告一個Channel</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%91%E9%80%9A%E9%81%93%E5%A1%9E%E5%85%A5%E5%85%83%E7%B4%A0"><span class="nav-number">3.</span> <span class="nav-text">向通道塞入元素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%8C%AF%E8%AA%A4%E7%94%A8%E6%B3%95"><span class="nav-number">3.1.</span> <span class="nav-text">錯誤用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A3%E7%A2%BA%E7%94%A8%E6%B3%95"><span class="nav-number">3.2.</span> <span class="nav-text">正確用法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%B9%E5%88%A5%E6%B3%A8%E6%84%8F"><span class="nav-number">4.</span> <span class="nav-text">特別注意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B8%BD%E7%B5%90"><span class="nav-number">5.</span> <span class="nav-text">總結</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%9C%E9%96%89Channel"><span class="nav-number">1.</span> <span class="nav-text">關閉Channel</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Why%EF%BC%9F"><span class="nav-number">1.1.</span> <span class="nav-text">Why？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How"><span class="nav-number">1.2.</span> <span class="nav-text">How?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8for-%E5%BE%9Echannel%E5%85%A7%E5%8F%96%E8%B3%87%E6%96%99"><span class="nav-number">2.</span> <span class="nav-text">用for 從channel內取資料</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -662,7 +644,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'caizonglin.github.io',
       owner       : 'CaiZongLin',
       admin       : ['caizonglin'],
-      id          : 'bdd2d2897f1ddb3e2015aeaa779164ac',
+      id          : '4666a130497f34fce6de00d1ad2a18ee',
         language: 'zh-TW',
       distractionFreeMode: true
     });

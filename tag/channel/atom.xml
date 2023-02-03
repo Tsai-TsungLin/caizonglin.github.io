@@ -12,7 +12,8 @@
         <title>Golang的Channel(1)</title>
         <link rel="alternate" href="https://caizonglin.github.io/2023/02/01/Golang%E7%9A%84Channel-1/"/>
         <content type="html">&lt;p&gt;&lt;span id=&#34;0&#34;&gt; &lt;img data-src=&#34;https://i.imgur.com/IPZDBpj.png&#34; alt=&#34; &#34;&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;Channel-是什麼？&#34;&gt;&lt;a href=&#34;#Channel-是什麼？&#34; class=&#34;headerlink&#34; title=&#34;Channel 是什麼？&#34;&gt;&lt;/a&gt;Channel 是什麼？&lt;/h2&gt;&lt;p&gt;channel能夠在多個goroutine之間作數據交換，像是在公共場所很多人的情況下, 大家在遵守著排隊的習慣, 目的是避免擁擠、插隊導致的低效資源使用與交換過程。&lt;/p&gt;
+&lt;h2 id=&#34;Channel-是什麼？&#34;&gt;&lt;a href=&#34;#Channel-是什麼？&#34; class=&#34;headerlink&#34; title=&#34;Channel 是什麼？&#34;&gt;&lt;/a&gt;Channel 是什麼？&lt;/h2&gt;&lt;p&gt;&lt;img data-src=&#34;https://i.imgur.com/mdRUDti.png&#34; alt=&#34;Channel 示意圖&#34;&gt;&lt;/p&gt;
+&lt;p&gt;channel能夠在多個goroutine之間作數據交換，像是在公共場所很多人的情況下, 大家在遵守著排隊的習慣, 目的是避免擁擠、插隊導致的低效資源使用與交換過程。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;chan的空值是nil&lt;/li&gt;
 &lt;li&gt;聲明完通道後, 要透過make來產生實例&lt;/li&gt;
